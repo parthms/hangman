@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hangman</title>
+
+    <meta name="description" content="Hangman game for Coursera">
+    <meta name="author" content="Parth Shah">
+    <meta name="robots" content="index, follow">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/hangman.css">
+</head>
+<body>
+    <div id="hangman">
+        <div class="topHalf">
+            <div id="alphabet">
+                <div class="letter">
+                    <span>A</span>
+                </div>
+                <div class="letter">
+                    <span>B</span>
+                </div>
+                <div class="letter">
+                    <span>C</span>
+                </div>
+                <div class="letter">
+                    <span>D</span>
+                </div>
+                <div class="letter">
+                    <span>E</span>
+                </div>
+                <div class="letter">
+                    <span>F</span>
+                </div>
+                <div class="letter">
+                    <span>G</span>
+                </div>
+                <div class="letter">
+                    <span>H</span>
+                </div>
+                <div class="letter">
+                    <span>I</span>
+                </div>
+                <div class="letter">
+                    <span>J</span>
+                </div>
+                <div class="letter">
+                    <span>K</span>
+                </div>
+                <div class="letter">
+                    <span>L</span>
+                </div>
+                <div class="letter">
+                    <span>M</span>
+                </div>
+                <div class="letter">
+                    <span>N</span>
+                </div>
+                <div class="letter">
+                    <span>O</span>
+                </div>
+                <div class="letter">
+                    <span>P</span>
+                </div>
+                <div class="letter">
+                    <span>Q</span>
+                </div>
+                <div class="letter">
+                    <span>R</span>
+                </div>
+                <div class="letter">
+                    <span>S</span>
+                </div>
+                <div class="letter">
+                    <span>T</span>
+                </div>
+                <div class="letter">
+                    <span>U</span>
+                </div>
+                <div class="letter">
+                    <span>V</span>
+                </div>
+                <div class="letter">
+                    <span>W</span>
+                </div>
+                <div class="letter">
+                    <span>X</span>
+                </div>
+                <div class="letter">
+                    <span>Y</span>
+                </div>
+                <div class="letter">
+                    <span>Z</span>
+                </div>
+            </div>
+            <div id="gallow">
+                <canvas id="gallowCanvas" width="200" height="200"></canvas>
+            </div>
+            <div class="incorrectGuessesContainer">
+                <div id="incorrectGuesses"></div>
+                <div id="numIncorrectGuessesLeft">
+                    # of incorrect guesses left: <span></span>
+                </div>
+            </div>
+        </div>
+        <div id="phrase"></div>
+    </div>
+    <script type="text/javascript" src="js/vendor/jQuery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/src/hangman.js"></script>
+    <script type="text/javascript">
+        new Hangman();
+    </script>
+</body>
+</html>

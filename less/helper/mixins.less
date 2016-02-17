@@ -1,0 +1,38 @@
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
+
+.box-sizing(@boxmodel) {
+    -webkit-box-sizing: @boxmodel;
+    -moz-box-sizing: @boxmodel;
+    box-sizing: @boxmodel;
+}
+
+.clearfix() {
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.semibold-mixin() {
+    font-weight: 600;
+}
+
+.transition(@transition) {
+    -webkit-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+.user-select(@select) {
+    -webkit-user-select: @select;
+    -moz-user-select: @select;
+    -ms-user-select: @select; // IE10+
+    user-select: @select;
+}

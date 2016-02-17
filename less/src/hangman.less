@@ -1,0 +1,86 @@
+@import "../helper/mixins.less";
+
+@blue:          #2492D6;
+@blue-hover:    #279BE3;
+@red:           #D83939;
+
+* {
+    .box-sizing(border-box);
+}
+
+body {
+    max-width: 790px;
+    margin: 0 auto;
+}
+
+.topHalf {
+    margin: 50px auto 30px;
+    .user-select(none);
+    > div {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+#alphabet {
+    width: 270px;
+    .letter {
+        background-color: @blue;
+        cursor: pointer;
+        &:hover {
+            background-color: @blue-hover;
+        }
+        &.inactive {
+            cursor: default;
+        }
+    }
+}
+
+.letter {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: white;
+    .semibold-mixin();
+    display: inline-block;
+    text-align: center;
+    margin: 0 4px 7px 0;
+    .box-shadow(1px 2px 3px 0px rgba(0, 0, 0, 0.4));
+    .transition(opacity 0.2s linear);
+    span {
+        top: 7px;
+        position: relative;
+    }
+    &.inactive {
+        opacity: 0;
+    }
+}
+
+#gallow {
+    width: 300px;
+    text-align: center;
+}
+
+#incorrectGuesses {
+    height: 37px;
+    margin-bottom: 20px;
+    width: 210px;
+    .letter {
+        background-color: @red;
+        span {
+            cursor: default;
+        }
+    }
+}
+
+#phrase {
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 10px;
+    .semibold-mixin();
+    .user-select(none);
+}
+
+.errorMsg {
+    margin-top: 30px;
+}

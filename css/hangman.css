@@ -1,0 +1,83 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  max-width: 790px;
+  margin: 0 auto;
+}
+.topHalf {
+  margin: 50px auto 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.topHalf > div {
+  display: inline-block;
+  vertical-align: top;
+}
+#alphabet {
+  width: 270px;
+}
+#alphabet .letter {
+  background-color: #2492D6;
+  cursor: pointer;
+}
+#alphabet .letter:hover {
+  background-color: #279BE3;
+}
+#alphabet .letter.inactive {
+  cursor: default;
+}
+.letter {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  margin: 0 4px 7px 0;
+  -webkit-box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.4);
+  -webkit-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+.letter span {
+  top: 7px;
+  position: relative;
+}
+.letter.inactive {
+  opacity: 0;
+}
+#gallow {
+  width: 300px;
+  text-align: center;
+}
+#incorrectGuesses {
+  height: 37px;
+  margin-bottom: 20px;
+  width: 210px;
+}
+#incorrectGuesses .letter {
+  background-color: #D83939;
+}
+#incorrectGuesses .letter span {
+  cursor: default;
+}
+#phrase {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 10px;
+  font-weight: 600;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.errorMsg {
+  margin-top: 30px;
+}
